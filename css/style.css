@@ -1,0 +1,163 @@
+/* ナビゲーションに戻る時に即時ではなく、滑らかにスクロールして戻る効果を設定する */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ページ全体の共通設定 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Noto Serif JP', serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* ここからは文字をtop画像の真ん中に設定 */
+.top {
+    display: grid;
+    align-items: center;
+}
+
+    /* 2つの要素を一緒に設定 */
+.topimg, .logo {
+    /* ここでgridの列を設定する */
+    grid-column: 1;
+    /* ここでgridの行を設定する */
+    grid-row: 1;
+}
+
+    /* ここでスクロールしても文字がtopになったら固定にします */
+.logo {
+    position: sticky;
+    top: 0;
+}
+
+/* ここでナビゲーションバーのulの点を消す。冒頭の余白はpadding-left: 1em; で消す */
+ul {
+    list-style: none;
+    padding-left: 1em;
+}
+
+/* ここでリストを横並び（display: inline;）にして各ボタンの間の間隔をとって最初のボタンの前の余白を消す */
+li {
+    display: inline;
+    margin-right: 40px;
+    padding-left: 40px;
+}
+
+/* ここでナビゲーションバーのデザインを整える */
+nav {
+    margin-top: 10px;
+    padding: 0;
+    font-size: 18px;
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    justify-content: space-between;
+}
+
+#navmenu {
+    color: white;
+    text-decoration: none;
+    
+}
+
+#navmenu:hover {
+    color: #856245;
+}
+
+.title {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.serviceimg {
+    display: flex;
+    margin-left: 7%;
+    margin-right: 7%;
+    justify-content: space-between;
+}
+
+.whymeitem {
+    /* 画像と文章を横並びに */
+    display: flex;
+    margin: 0;
+    /* 一行（画像と文章）の左右の幅を固定にして真ん中揃いに */
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* whymeの「画像」と「文字」に同じ設定をする */
+.whymecontent {
+    /* どちらの大きさも50%で半々に */
+    width: 50%;
+    /* もう1回横並びを設定することで、画面が小さくなっても真ん中揃いのまま。なんで？レスポンシブの一部？ */
+    display: flex;
+    /* 左右の要素が水平方向で真ん中揃いに */
+    align-items: center;
+}
+
+.whyme_text {
+    padding: 40px;
+}
+
+#whymelink {
+    font-size: 11px;
+    color: #aeaeae;
+    text-align: right;
+    padding-right: 2px
+}
+
+.everynews {
+    display: flex;
+    margin-left: 7%;
+    margin-right: 7%;
+    justify-content: space-between;
+    gap: 0 25px;
+}
+
+.profile {
+    display: flex;
+    margin-left: 14%;
+    margin-right: 14%;
+    align-items: center;
+}
+
+/* 前回はここまで */
+
+h3 {
+    text-align: center;
+    letter-spacing: 2px;
+    text-indent: 2px;
+}
+
+p {
+    font-size: small;
+    text-align: center;
+    letter-spacing: 1px;
+    text-indent: 1px;
+    line-height: 170%;
+}
+
+.contactform {
+    text-align: center;
+}
+
+.backmenu {
+    position: fixed;
+    right: 30px;
+    bottom: 55px;
+}
+
+footer {
+    background-color: #242424;
+    margin-top: 100px;
+    height: auto;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

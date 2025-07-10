@@ -5,7 +5,7 @@
 - 仕様書と大体同じようなレイアウトで、素材は自分で集めて、文章は自分で作成したサイトです。
 
 ## ③DEMO
-- https://mzkri9.github.io/kadai00_cheese/
+- https://mzkri9.github.io/flowersknives
 
 ## ④作ったアプリケーション用のIDまたはPasswordがある場合
 
